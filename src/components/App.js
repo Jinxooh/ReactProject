@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from './Contact';
 
 class App extends React.Component {
   constructor(props){
@@ -12,8 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello! {this.state.name}</h1>
-        <button onClick={()=> { this.setState({name: 'Jinx'});}}>Button</button>
+        <Contact/>
       </div>
     );
   }
